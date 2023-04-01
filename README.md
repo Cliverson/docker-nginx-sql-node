@@ -1,8 +1,8 @@
 # docker-nginx-sql-node
 
 # Maquina de DEV
-    docker build -t cliversonbatista/servernode .
-    docker run --rm -it -v $(pwd)/:/usr/src/app -p 3000:3000 cliversonbatista/servernode                         
+    docker build -t XXXXXXXXXXX/servernode .
+    docker run --rm -it -v $(pwd)/:/usr/src/app -p 3000:3000 XXXXXXXXXXX/servernode                         
 
 
 # Pastas
