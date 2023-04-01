@@ -17,5 +17,5 @@ docker run --rm -it -v $(pwd)/:/usr/src/app -p 3000:3000 cliversonbatista/server
     docker-compose down
 
 # Teste:
-get http://localhost:8080/ -> lista nomes
-get http://localhost:8080/{xxxxx} -> inclui nome
+    get http://localhost:8080/ -> lista nomes
+    get http://localhost:8080/{xxxxx} -> inclui nome
