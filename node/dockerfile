@@ -1,0 +1,16 @@
+FROM node:15
+
+WORKDIR /usr/src/app
+
+#RUN npm config set registry https://registry.npmjs.org/ && \
+#    npm config set strict-ssl false && \
+#    npm init -y && \
+#    npm install express --save && \
+#    npm install mysql --save
+
+COPY index.js /usr/src/app/
+
+EXPOSE 3000
+
+#CMD ["node","index.js"]
+
