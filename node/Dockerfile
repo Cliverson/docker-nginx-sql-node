@@ -1,4 +1,4 @@
-FROM node:15
+FROM node:15-alpine
 
 WORKDIR /usr/src/app
 
@@ -7,8 +7,12 @@ WORKDIR /usr/src/app
 #    npm init -y && \
 #    npm install express --save && \
 #    npm install mysql --save
-RUN npm install
+
 COPY index.js /usr/src/app/
+COPY package.json /usr/src/app/
+COPY package-lock.json /usr/src/app/
+
+RUN npm install
 
 EXPOSE 3000
 
