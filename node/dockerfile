@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 #    npm init -y && \
 #    npm install express --save && \
 #    npm install mysql --save
-
+RUN npm install
 COPY index.js /usr/src/app/
 
 EXPOSE 3000
